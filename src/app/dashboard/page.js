@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
-import styles from './Dashboard.module.css'; // Adjust path if necessary
+import styles from './dashboard.module.css'; // Adjust path if necessary
 
 export default function Dashboard() {
   const [links, setLinks] = useState([]);

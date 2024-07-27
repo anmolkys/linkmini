@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
-import styles from './Login.module.css';
+import styles from './login.module.css';
 
 export default function Login() {
   const [username, setUsername] = useState('');

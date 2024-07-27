@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
-import styles from './Signup.module.css';
+import styles from './signup.module.css';
 import Navbar from '@/components/navbar';
 
 export default function Signup() {
