@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import styles from './navbar.module.scss';
+import { useRouter } from 'next/navigation';
+export default function DashNav() {
 
-export default function Navbar() {
+    const router = useRouter()
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
@@ -13,6 +15,8 @@ export default function Navbar() {
   const handleLogout = () => {
     localStorage.removeItem('token');
     setIsLoggedIn(false);
+    router.push("/login")
+    
   };
 
   return (
@@ -23,8 +27,8 @@ export default function Navbar() {
       <div className={styles.menu}>
         {isLoggedIn ? (
           <>
-            <Link href="/dashboard" className={styles.link}>
-              <div className={styles.title}>Dashboard</div>
+            <Link href="/" className={styles.link}>
+              <div className={styles.title}>Home</div>
               <div className={styles.bar}></div>
             </Link>
             <div onClick={handleLogout} className={styles.link}>
@@ -40,6 +44,10 @@ export default function Navbar() {
             </Link>
             <Link href="/signup" className={styles.link}>
               <div className={styles.title}>Signup</div>
+              <div className={styles.bar}></div>
+            </Link>
+            <Link href="/about" className={styles.link}>
+              <div className={styles.title}>About</div>
               <div className={styles.bar}></div>
             </Link>
           </>

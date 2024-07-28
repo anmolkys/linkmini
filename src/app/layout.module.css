@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #0d0d2b, #000000);
+    color: white;
+  }  
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #0C0C27;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ff4081;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e00070;
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }  
