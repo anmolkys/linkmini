@@ -33,7 +33,7 @@ export default function Home() {
         <div className={styles.content}>
           <div className={styles.container}>
             <div className={styles.left}>
-              <h4>Random Waifu</h4>
+              <h4>Random Character</h4>
               {loading ? (
                 <p>Loading...</p>
               ) : waifu ? (
